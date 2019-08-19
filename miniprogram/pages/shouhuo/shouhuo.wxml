@@ -1,0 +1,21 @@
+<view class="sj_zhuti">
+  <radio-group>
+  <view class="xinxi" wx:for="{{list}}" wx:key="index" bindtap="tding" data-id="{{item._id}}">
+   <view class="xx_s">
+    <view class="jianli"> 
+      <view>{{item.uname}}</view>
+      <view>{{item.phone}}</view>
+    </view>
+    <view class="dz_l">{{item.site}}</view>
+   </view>
+   <view class="xx_x">
+    <view catchtap="xuanz" data-id="{{item._id}}" data-index="{{index}}"> <radio 
+    checked="{{item.defaulte}}"></radio> 默认地址</view>
+    <view class="czuo">
+    <view> <image src="cloud://web-zzl-iukkd.7765-web-zzl-iukkd/diaoyu/bx.png"></image> 编辑 </view>  <view catchtap="shanchu" data-id="{{item._id}}" data-index="{{index}}"><image src="cloud://web-zzl-iukkd.7765-web-zzl-iukkd-1259662401/diaoyu/lj.png"></image> 删除</view>
+    </view>
+   </view>
+  </view>
+  </radio-group>
+  <view class="tianjia" bindtap="tianjia">添加地址</view>
+</view>

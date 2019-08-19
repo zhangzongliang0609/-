@@ -1,0 +1,48 @@
+{
+  "pages": [
+    "pages/my/my",
+    "pages/index/index",
+    "pages/activity/activity",
+    "pages/shop/shop", 
+    "pages/reg/reg",
+    "pages/xq/xq",
+    "pages/sc/sc",
+    "pages/sou/sou",
+    "pages/pay/pay",
+    "pages/shouhuo/shouhuo",
+    "pages/xiugai/xiugai",
+    "pages/dingdan/dingdan"
+  ],
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#F6F6F6",
+    "navigationBarTitleText": "云开发 QuickStart",
+    "navigationBarTextStyle": "black"
+  },
+  "sitemapLocation": "sitemap.json",
+  "tabBar": {
+    "list": [{
+      "pagePath": "pages/index/index",
+      "text": "首页",
+      "iconPath": "images/index.png",
+      "selectedIconPath": "images/index1.png"
+    },{
+      "pagePath": "pages/activity/activity",
+      "text": "活动",
+      "iconPath": "images/activity.png",
+      "selectedIconPath": "images/activity1.png"
+    },
+    {
+      "pagePath":"pages/shop/shop",
+      "text": "购物车",
+      "iconPath": "images/shop.png",
+      "selectedIconPath": "images/shop (1).png"
+    },{
+      "pagePath": "pages/reg/reg",
+      "text": "我的",
+      "iconPath": "images/my.png",
+      "selectedIconPath": "images/my (1).png"
+    }]
+  }
+}

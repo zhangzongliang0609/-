@@ -1,0 +1,24 @@
+
+<view class="zhuti">
+  <input class="sr"  placeholder="请输入搜索关键词" bindinput="sr" bindinput="sr"></input>
+  <view class="ss" bindtap="dj">搜索</view>
+</view>
+<view>
+ <image src="cloud://web-zzl-iukkd.7765-web-zzl-iukkd/diaoyu/fdj.png" class="fd"></image>
+</view>
+<view class="s_shop"  wx:for="{{bl}}" wx:key="index">
+  <view class="pic_z">
+    <view class="s_tu">
+    <image src="{{item.pic}}" class="s_pic"></image>
+    </view>
+    <view class="jies">
+      <view class="jies_t">{{item.title}}</view>
+      <view class="pic_n">
+        <view>￥{{item.cc}}</view>
+        <view class="gouw">
+         <image src="cloud://web-zzl-iukkd.7765-web-zzl-iukkd-1259662401/diaoyu/cheche.png"></image>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

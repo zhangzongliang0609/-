@@ -1,0 +1,63 @@
+.hzx{
+  width: 100%;
+  height: 100rpx;
+  border-top:1rpx solid gainsboro;
+  border-bottom:1rpx solid gainsboro;
+ display: flex;
+  line-height: 100rpx;
+ padding-left:10rpx 
+}
+.shuru{
+  height: 100rpx;
+  flex-grow: 1;
+  padding:0 15px;
+  text-align:right
+}
+.bc{
+  width: 90%;
+  height: 80rpx;
+  background: black;
+  color: white;
+  margin: 20rpx auto;
+  text-align: center;
+  line-height: 80rpx;
+  border-radius: 10rpx
+}
+.zzc{
+  width: 100%;
+  height: 100vh;
+  background: gainsboro;
+  z-index: 99;
+  position: fixed;
+  top: 0;
+  left: 0;
+  opacity: .9
+}
+.xians{
+z-index: 999;
+height: 250rpx;
+width: 300rpx;
+margin: 0 auto;
+}
+.ti{
+  width: 100%;
+  height: 100rpx;
+  background: red;
+  color: white;
+  font-size:55rpx ;
+  text-align: center;
+  line-height: 100rpx;
+  font-weight: 700 ;
+  border-top-left-radius:20rpx ;
+  border-top-right-radius:20rpx 
+}
+.neir{
+  width: 100%;
+  height: 150rpx;
+  background: white;
+  text-align: center;
+  line-height: 150rpx;
+  border-radius: 5rpx;
+  font-size: 35rpx;
+}
+

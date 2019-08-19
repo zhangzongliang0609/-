@@ -1,0 +1,29 @@
+<view class="hzx">
+<view>姓名</view> <input placeholder="姓名" class="shuru"
+bindinput="xm" type="text"></input>
+</view>
+<view class="hzx">
+<view class="section"> 
+  <picker mode="region" bindchange="bindRegionChange" value="{{region}}" custom-item="{{customItem}}">
+    <view class="picker">
+收货地址：{{region[0]}}，{{region[1]}}，{{region[2]}}
+    </view>
+  </picker>
+</view>
+</view>
+<view class="hzx">
+<view>详细地址</view>
+<input placeholder="请输入详细地址信息" class="shuru" bindinput="dz"></input>
+</view>
+<view class="hzx">
+ <view>手机</view>
+ <input class="shuru" placeholder="手机" bindinput="phone" maxlength="11"
+ type="number"></input>
+</view>
+<view class="bc" bindtap="subite">保存</view>
+<!-- 弹窗 -->
+<view class="zzc" bindtap="gb" wx:if="{{isshow}}"></view>
+<view class="xians" wx:if="{{isshow}}">
+  <view class="ti">提示</view>
+  <view class="neir">{{tishi}}</view>
+</view>

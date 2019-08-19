@@ -1,0 +1,40 @@
+<view class="p_zhuti">
+   <view class="asd">
+  <view class="dik" wx:for="{{cd}}" wx:key="index" style="background:{{index%2==0 ? 'red' : 'blue'}}"></view>
+ </view> 
+ <view wx:if="{{!canshow}}" class="meishuju"><button catchtap="tiaoxiu">添加收货地址</button></view>
+  <view class="sh" catchtap="shouhuo" wx:if="{{canshow}}">
+     <view class="sh_x">
+        <view class="xm">收货人： <text>{{dz.uname}}</text></view>
+         <view class="shouj">手机： <text>{{dz.phone}}</text></view>
+      </view>
+      <view class="dz">地址： <span>{{dz.site}}</span></view>
+  </view>
+  <view class="sping" wx:for="{{list}}" wx:key="index">
+    <view class="sp_z"><image src="{{item.pic}}"></image></view>
+    <view class="sp_y">
+     <view class="title">{{item.title}}</view>
+     <view class="sp_j">
+       <view>￥{{item.cc}}</view>
+       <view>X {{item.num}}</view>
+     </view>
+    </view>
+  </view>
+  <view class="zongjia">
+   <view>商品总额</view>
+   <view>￥{{zongjia}}</view>
+  </view>
+  <view class="zongjia">
+   <view>配送方式</view>
+   <view>平邮￥5.00 》</view>
+  </view>
+  <view class="zongjia">
+    <view>支付方式</view>
+    <view>货到付款 》</view>
+  </view>
+  <van-submit-bar
+  price="{{heji}}"
+  button-text="提交订单"
+  bind:submit="onSubmit"
+/>
+</view>

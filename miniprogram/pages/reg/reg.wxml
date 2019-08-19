@@ -1,0 +1,35 @@
+<view class="r_zhuti">
+    <h3>会员中心</h3>
+    <view class="y_reg">
+      <image src="{{yh.avatarUrl}}"></image> 
+      <text>{{yh.nickName}}</text>
+    </view>
+    <view class="r-dingdan">我的订单</view>
+    <view class="r-jin">
+        <view catchtap="daifu">
+            <image src="cloud://web-zzl-iukkd.7765-web-zzl-iukkd/diaoyu/daifu.png"></image>
+            待付款
+            <view class="sl" wx:if="{{canshow}}">{{shul}}</view>
+        </view>
+        <view>
+            <image src="cloud://web-zzl-iukkd.7765-web-zzl-iukkd/diaoyu/daicheng.png"></image>
+            待成团
+        </view>
+        <view>
+            <image src="cloud://web-zzl-iukkd.7765-web-zzl-iukkd/diaoyu/daifa.png"></image>
+            待发货
+        </view>
+        <view>
+            <image src="cloud://web-zzl-iukkd.7765-web-zzl-iukkd/diaoyu/yishou.png"></image>
+            已收货
+        </view>
+    </view>
+    <view class="shouhuo" bindtap="tiaoxin">
+       <image src="cloud://web-zzl-iukkd.7765-web-zzl-iukkd/diaoyu/shouhuo.png"></image>
+       <view>收货人信息</view>
+    </view>
+    <view class="shouhuo">
+       <image src="cloud://web-zzl-iukkd.7765-web-zzl-iukkd/diaoyu/youhui.png"></image>
+       <view>优惠券</view>
+    </view>
+</view>

@@ -1,0 +1,85 @@
+/* pages/dingdan/dingdan.wxss */
+.meiy{
+  width: 100%;
+  height: 100%;
+  background: #f3f3f3;
+  text-align: center
+}
+.meiy image{
+  margin: 200rpx 100rpx 0rpx 100rpx;
+}
+.dan{
+  width: 100%;
+  height: 100%;
+  background:  #f3f3f3;
+}
+.dang{
+  width: 100%;
+  background: white;
+  margin-top:15rpx 
+}
+.dang_x{
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  height: 100rpx;
+ line-height: 100rpx;
+ 
+}
+.d_sp{
+border-bottom:1rpx solid gainsboro ;
+border-top: 1rpx solid gainsboro;
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  height: 180rpx;
+}
+.dingdantitle{
+   width: 90%;
+  margin: 0 auto;
+  height: 180rpx;
+  text-align: right;
+  line-height: 90rpx
+}
+.zongjia{
+  font-size: 30rpx
+}
+.yunfei{
+  font-size: 28rpx;
+  color: gray
+}
+.dingdantitle button{
+  width: 200rpx;
+  height: 60rpx;
+  border: 1rpx solid gainsboro;
+  line-height: 60rpx;
+  margin:0 70% 
+}
+.tu{
+width: 160rpx;
+height: 160rpx;
+margin-top:10rpx 
+}
+.xinxi{
+  width: 70%;
+  height: 180rpx;
+  margin-left:20rpx 
+}
+.title{
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-top: 20rpx;
+}
+.jiage{
+  margin-top:40rpx;
+  font-size: 33rpx 
+}
+.shuliang{
+   margin-left:40px ;
+   font-size:30rpx;
+   color: gray 
+}

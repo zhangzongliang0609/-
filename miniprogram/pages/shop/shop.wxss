@@ -1,0 +1,71 @@
+.shop_zhuti{
+ margin: 0;
+}
+.s_reg{
+  width: 100%;
+  text-align: center;
+}
+.s_reg button{
+background: black;
+color: #fff;
+border-radius: 10rpx;
+height: 100rpx;
+line-height: 100rpx;
+width: 300rpx;
+}
+.gouwulan{
+  height: 200rpx;
+  width: 100%;
+  display: flex;
+  border-bottom: 0.1rpx solid gray;
+  position: relative
+}
+.shitu{
+  width: 118rpx;
+  height: 118rpx;
+  display: block;
+  margin: auto 30rpx;
+}
+checkbox .wx-checkbox-input{  
+  border-radius: 50%;
+  height: 40rpx;
+  width: 40rpx;
+  margin-top: -4rpx;
+  position: relative;
+ top: 70rpx;
+}
+.sc{
+  position: absolute;
+  right: 0rpx;
+  top: 0rpx;
+  width: 40rpx;
+  height: 40rpx
+}
+.zhushi{
+  width: 60%
+}
+.title{
+  font-size: 26rpx;
+  margin: 20rpx;
+}
+.sl{
+  display: flex
+}
+.sl view{
+  width: 60rpx;
+  height: 40rpx;
+  text-align: center;
+  line-height: 40rpx;
+  border: 0.1rpx solid gray
+  
+}
+.caozuo{
+  display: flex;
+  justify-content: space-between;
+  margin: 50rpx 0;
+}
+.sp{
+  width: 100%;
+   border-top: 0.1rpx solid gray;
+  border-bottom: 0.1rpx solid gray;
+}

@@ -1,0 +1,41 @@
+<!-- 购物车 -->
+<view class="shop_zhuti">
+   <view  wx:if="{{cangou}}" class="s_reg">
+      <image src="cloud://web-zzl-iukkd.7765-web-zzl-iukkd-1259662401/diaoyu/gw.png"></image>
+      <van-button size="small" class="s_deng" bindtap="tiao">请先添加商品</van-button>
+   </view>
+    <!-- <view wx:else  class="sp"> -->
+    <view wx:if="{{!cangou}}"  class="sp">
+         <view class="gouwulan" wx:for="{{list}}" wx:key="index">
+      <checkbox class="dagou" checked="{{item.select}}" bindtap="xza"  data-index="{{index}}"></checkbox>
+      <image src="{{item.pic}}" class="shitu" lazy-load="true"></image>
+      <view class="zhushi">
+        <view class="title">{{item.title}}</view>
+        <view class="caozuo">
+            <view class="sl">
+              <view bindtap="subtraction" data-index="{{index}}"
+               data-num="{{item.num}}">-</view><view>{{item.num}}</view><view bindtap="jia" data-index="{{index}}" data-num="{{item.num}}">+</view>
+            </view>
+            <view class="h" >￥{{item.cc}}</view>
+        </view>
+      </view>
+      <image src="/images/lj.png" class="sc" bindtap="del" data-id="{{item._id}}"   
+     data-index="{{index}}" ></image>
+   </view>
+      <van-submit-bar
+  price="{{zongjia}}"
+  button-text="提交订单"
+  bind:submit="onClickButton"
+  tip="{{ true }}"
+>
+ <van-checkbox
+ value="{{ checked }}"
+ checked-color="#07c160"
+ bind:change="onChange"
+ bindtap="selcc"
+>
+全选
+</van-checkbox>
+</van-submit-bar>
+    </view>    
+</view>

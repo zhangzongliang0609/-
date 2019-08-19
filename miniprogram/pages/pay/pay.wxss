@@ -1,0 +1,113 @@
+/* pages/pay/pay.wxss */
+.p_zhuti{
+  width: 100%;
+  height: 100%;
+  background: #e9e9e9
+}
+.asd{
+  height:3rpx;
+  display:flex;
+}
+.dik{
+  height:100%;
+  margin:0 1px;
+  flex-grow: 1;
+  transform:skew(-20deg);
+}
+.sh{
+  height: 200rpx;
+  width: 100%;
+  border-bottom:1rpx solid rebeccapurple ;
+  padding: 20rpx;
+  background: white;
+  margin-bottom:10rpx; 
+}
+.sh_x{
+  height: 60%;
+  width: 100;
+  display: flex;
+  justify-content: space-between;
+}
+.xm{
+  height: 100%;
+  width: 50%
+}
+.xm text{
+  font-size: 28rpx
+}
+.dz{
+   height: 30%;
+   width: 100%
+}
+.dz span{
+  font-size: 28rpx
+}
+.shouj{
+  height: 100%;
+  line-height: 80rpx;
+  width: 50%
+}
+.shouj text{
+  font-size: 28rpx
+}
+.sping{
+  width: 100%;
+  display: flex;
+  height: 200rpx;
+  justify-content: space-around;
+  background: white;
+  margin-bottom: 10rpx
+}
+.sp_z{
+  height: 80%;
+  width: 30%;
+  margin: 10rpx;
+}
+.sp_z image{
+  width: 100%;
+  height: 180rpx;
+}
+.sp_y{
+  width: 60%;
+  height: 100%;
+}
+.title{
+  width: 90%;
+  height: 120rpx;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap
+}
+.sp_j{
+  display: flex;
+  width: 90%;
+  height: 50rpx;
+  justify-content: space-between
+}
+.zongjia{
+  width: 100%;
+  height: 130rpx;
+  display: flex;
+  justify-content: space-between;
+  background: white;
+  border-bottom: 1rpx solid gainsboro;
+  line-height: 130rpx
+}
+.zongjia view{
+  margin:0 20rpx;
+}
+.meishuju{
+  height: 180rpx;
+  width: 100%;
+  background: white
+}
+.meishuju button{
+  width: 30%;
+  height: 50%;
+  background: red;
+  border-radius:30rpx ;
+  line-height: 90rpx;
+  color: blue;
+  position: relative;
+  top: 45rpx
+}

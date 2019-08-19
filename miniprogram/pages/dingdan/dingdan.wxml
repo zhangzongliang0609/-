@@ -1,0 +1,49 @@
+<van-tabs swipeable>
+  <van-tab title="订单">
+    <view wx:if="{{canding}}" class="meiy">
+      <image src="cloud://web-zzl-iukkd.7765-web-zzl-iukkd/diaoyu/wj.png"></image>
+      <view>亲，您还没有相关商品</view>
+    </view>
+    <view wx:if="{{!canding}}" class="dan" wx:for="{{list}}" wx:key="index">
+      <view class="dang">
+        <view class="dang_x">
+          <view>订单号：{{item.danhao}}</view>
+          <view>待付款</view>
+        </view>
+        <view class="d_sp" wx:for="{{item.xinxi}}" wx:for-item="de" wx:key="i">
+          <image src="{{de.pic}}" class="tu"></image>
+          <view class="xinxi">
+            <view class="title">{{de.title}}</view>
+            <view class="jiage">￥{{de.cc}}
+              <text class="shuliang">x{{de.num}}</text>
+            </view>
+          </view>
+        </view>
+        <view class="dingdantitle">
+          <view class="zongjia">合计：￥{{item.heji/100+".00"}}
+            <text class="yunfei">(含运费 ￥5.00)</text>
+          </view>
+          <button catchtap="quxiao" data-id="{{item._id}}" data-index="{{index}}">取消订单</button>
+        </view>
+      </view>
+    </view>
+  </van-tab>
+  <van-tab title="待发货">
+    <view wx:if="{{canding}}" class="meiy">
+      <image src="cloud://web-zzl-iukkd.7765-web-zzl-iukkd/diaoyu/wj.png"></image>
+      <view>亲，您还没有相关商品</view>
+    </view>
+  </van-tab>
+  <van-tab title="待收货">
+    <view wx:if="{{canding}}" class="meiy">
+      <image src="cloud://web-zzl-iukkd.7765-web-zzl-iukkd/diaoyu/wj.png"></image>
+      <view>亲，您还没有相关商品</view>
+    </view>
+  </van-tab>
+  <van-tab title="已收货">
+    <view wx:if="{{canding}}" class="meiy">
+      <image src="cloud://web-zzl-iukkd.7765-web-zzl-iukkd/diaoyu/wj.png"></image>
+      <view>亲，您还没有相关商品</view>
+    </view>
+  </van-tab>
+</van-tabs>

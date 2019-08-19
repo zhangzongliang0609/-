@@ -1,0 +1,8 @@
+<!-- 添加记录 -->
+<text class="p" wx:if="{{counterId}}">新增的记录 _id 为：{{counterId}}</text>
+介绍 <input type="text" bindinput="onchange"></input>
+价格<input type="text"  bindinput="change"></input>
+图片地址： <input type="text" bindinput="cc"></input>
+分类：<input type="text" bindinput="vv"></input>
+<button size="mini" type="default" bindtap="onAdd">新增记录</button>
+

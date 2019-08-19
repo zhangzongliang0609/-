@@ -1,0 +1,63 @@
+/* pages/shouhuo/shouhuo.wxss */
+.sj_zhuti{
+  background: #e9e9e9;
+  width: 100%;
+  height: 100%;
+  padding: 15rpx
+}
+.xinxi{
+  background: white;
+  width: 96%;
+  height: 250rpx;
+  margin-bottom:10rpx 
+}
+.xx_s{
+  width: 90%;
+  height: 60%;
+  margin: 0 auto;
+  line-height: 100rpx;
+  border-bottom:1rpx solid gainsboro 
+}
+.jianli{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  height: 30%
+}
+.dz_l{
+  margin-top:20rpx; 
+  width: 100%;
+  height: 20%;
+  
+}
+.xx_x{
+  display: flex;
+  width: 90%;
+  height: 40%;
+  justify-content: space-between;
+  margin: 10rpx auto;
+  font-size: 30rpx;
+}
+.czuo{
+  width: 40%;
+  height: 100%;
+ display: flex ;
+ justify-content: space-around
+}
+.czuo view{
+  height: 95%
+}
+.czuo image{
+  height: 38%;
+  width: 28rpx;
+  position: relative;
+  top: 5rpx
+}
+.tianjia{
+  width: 96%;
+  height: 80rpx;
+  margin-top:10rpx;
+  background: white;
+  text-align: center;
+  line-height: 80rpx 
+}
